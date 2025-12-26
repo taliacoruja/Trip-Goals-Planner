@@ -1,0 +1,100 @@
+.panel {
+    position: sticky;
+    top: 16px;
+    display: grid;
+    gap: 14px;
+    padding: 16px;
+    border-radius: var(--radius);
+    border: 1px solid var(--stroke);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
+}
+
+@media (max-width: 860px) {
+    .panel {
+        position: static;
+    }
+}
+
+.head {
+    display: grid;
+    gap: 6px;
+}
+
+.title {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+}
+
+.hint {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.35;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-width: 0;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    max-width: 100%;
+    padding: 9px 10px;
+    border-radius: 999px;
+
+    border: 1px solid var(--stroke);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text);
+    cursor: pointer;
+
+    box-shadow: none;
+    transition: transform 0.06s ease, background 0.12s ease, border-color 0.12s ease;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.chip:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.chip:active {
+    transform: translateY(1px);
+}
+
+.chipActive {
+    border-color: rgba(125, 211, 252, 0.45);
+    background: rgba(125, 211, 252, 0.14);
+}
+
+.empty {
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    border: 1px dashed rgba(255, 255, 255, 0.18);
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.empty strong {
+    display: block;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+
+.empty p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.35;
+}

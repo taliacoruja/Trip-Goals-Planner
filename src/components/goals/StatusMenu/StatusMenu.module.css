@@ -1,0 +1,149 @@
+.root {
+    position: relative;
+    display: grid;
+    grid-template-columns: 54px 1fr;
+    gap: 10px;
+    align-items: center;
+    min-width: 0;
+}
+
+.label {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.button {
+    height: 36px;
+    width: 100%;
+    padding: 0 10px;
+
+    border-radius: 12px;
+    border: 1px solid var(--stroke);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.value {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.chevron {
+    opacity: 0.75;
+    font-size: 14px;
+}
+
+.menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    grid-column: 2 / 3;
+    margin: 6px 0 0;
+    padding: 6px;
+    list-style: none;
+
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(11, 18, 32, 0.98);
+
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(10px);
+    overflow: auto;
+    z-index: 2;
+}
+
+.optionWrap {
+    margin: 0;
+}
+
+.option {
+    width: 100%;
+    text-align: left;
+
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--text);
+
+    padding: 10px 10px;
+    border-radius: 12px;
+
+    display: grid;
+    gap: 4px;
+
+    cursor: pointer;
+}
+
+.option:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.optionActive {
+    background: rgba(125, 211, 252, 0.1);
+    border-color: rgba(125, 211, 252, 0.22);
+}
+
+.optionMain {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.optionLabel {
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.optionHint {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.2;
+}
+
+.check {
+    margin-left: auto;
+    opacity: 0.85;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    flex: 0 0 auto;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.06);
+}
+
+.dot_todo {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.dot_in_progress {
+    background: rgba(218, 221, 15, 0.9);
+}
+
+.dot_done {
+    background: rgba(52, 211, 153, 0.9);
+}
+
+.dot_skipped {
+    background: rgba(211, 52, 73, 0.9);
+}

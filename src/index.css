@@ -1,0 +1,52 @@
+html,
+body {
+    height: 100%;
+    background: #070b14;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    display: block;
+    background: transparent;
+    color: inherit;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    min-height: 100dvh;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+}
+
+a:hover {
+    opacity: 0.9;
+}
+
+img,
+svg,
+video,
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: inherit;
+}

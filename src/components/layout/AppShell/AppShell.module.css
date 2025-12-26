@@ -1,0 +1,89 @@
+:global(:root) {
+    --bg: #0b1220;
+    --surface: rgba(255, 255, 255, 0.06);
+    --surface-2: rgba(255, 255, 255, 0.09);
+    --stroke: rgba(255, 255, 255, 0.12);
+
+    --text: rgba(255, 255, 255, 0.92);
+    --muted: rgba(255, 255, 255, 0.68);
+    --faint: rgba(255, 255, 255, 0.5);
+
+    --accent: #7dd3fc;
+    --accent-2: #a78bfa;
+    --danger: #fb7185;
+
+    --radius: 16px;
+    --radius-sm: 12px;
+
+    --shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+    --shadow-soft: 0 8px 22px rgba(0, 0, 0, 0.28);
+
+    --ring: 0 0 0 4px rgba(125, 211, 252, 0.25);
+
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+
+    --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+        'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+.app {
+    min-height: 100dvh;
+    background: radial-gradient(1200px 500px at 20% 0%, rgba(167, 139, 250, 0.18), transparent 60%),
+        radial-gradient(900px 480px at 80% 10%, rgba(125, 211, 252, 0.16), transparent 55%),
+        linear-gradient(180deg, #0b1220, #070b14);
+    color: var(--text);
+    font-family: var(--font);
+}
+
+.header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 20px 10px;
+}
+
+.title {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+.tagline {
+    margin: 8px 0 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 24px auto 0;
+    padding: 0 20px;
+}
+
+:global(*) {
+    box-sizing: border-box;
+}
+
+:global(button),
+:global(input),
+:global(select) {
+    font: inherit;
+}
+
+:global(button) {
+    -webkit-tap-highlight-color: transparent;
+}
+
+:global(:focus-visible) {
+    outline: none;
+    box-shadow: var(--ring);
+    border-color: rgba(125, 211, 252, 0.55) !important;
+}
+
+:global(::selection) {
+    background: rgba(125, 211, 252, 0.25);
+}
