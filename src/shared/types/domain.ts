@@ -1,4 +1,6 @@
-export type Category = 'docs' | 'packing' | 'money' | 'health' | 'booking' | 'other';
+export const CATEGORIES = ['docs', 'packing', 'money', 'health', 'booking', 'other'] as const;
+export type Category = (typeof CATEGORIES)[number];
+
 export const STATUSES = ['todo', 'in_progress', 'done', 'skipped'] as const;
 export type Status = (typeof STATUSES)[number];
 

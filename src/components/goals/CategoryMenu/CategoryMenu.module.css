@@ -1,0 +1,52 @@
+.value {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pill {
+    width: 14px;
+    height: 10px;
+    border-radius: 999px;
+    opacity: 0.9;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.pill_docs {
+    background: rgba(120, 180, 255, 0.85);
+}
+.pill_packing {
+    background: rgba(255, 190, 120, 0.85);
+}
+.pill_money {
+    background: rgba(120, 255, 180, 0.85);
+}
+.pill_health {
+    background: rgba(255, 120, 160, 0.85);
+}
+.pill_booking {
+    background: rgba(190, 120, 255, 0.85);
+}
+.pill_other {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.optionMain {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.optionLabel {
+    font-weight: 600;
+}
+
+.optionHint {
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+.check {
+    margin-left: auto;
+    opacity: 0.9;
+}

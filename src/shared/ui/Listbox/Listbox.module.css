@@ -1,0 +1,115 @@
+.root {
+    position: relative;
+    display: grid;
+    gap: 6px;
+    min-width: 180px;
+}
+
+.label {
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    padding: 10px 12px;
+    border-radius: 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.06);
+    color: inherit;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.button:focus-visible {
+    outline: 3px solid rgba(120, 180, 255, 0.45);
+    outline-offset: 2px;
+}
+
+.value {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.chevron {
+    opacity: 0.8;
+}
+
+.menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    padding: 6px;
+    margin: 0;
+    list-style: none;
+
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(20, 20, 24, 0.96);
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(10px);
+}
+
+.optionWrap {
+    margin: 0;
+}
+
+.option {
+    width: 100%;
+    text-align: left;
+
+    display: grid;
+    gap: 4px;
+
+    padding: 10px 10px;
+    border-radius: 12px;
+
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+.option:hover,
+.optionActive {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.option:focus-visible {
+    outline: 3px solid rgba(120, 180, 255, 0.45);
+    outline-offset: 2px;
+}
+
+.optionMain {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.optionLabel {
+    font-weight: 600;
+}
+
+.optionHint {
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+.check {
+    margin-left: auto;
+    opacity: 0.9;
+}

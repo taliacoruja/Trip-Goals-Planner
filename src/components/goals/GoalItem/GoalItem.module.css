@@ -56,7 +56,16 @@
     font-size: 12px;
     color: var(--muted);
 }
-
+.menusRow {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.menuItem {
+    flex: 1 1 220px;
+    min-width: 220px;
+}
 .select {
     height: 36px;
     padding: 0 10px;
